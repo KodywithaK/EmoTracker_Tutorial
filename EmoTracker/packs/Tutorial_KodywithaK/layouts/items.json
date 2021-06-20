@@ -1,0 +1,18 @@
+{
+    "shared_item_grid": {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "item_margin": "5",
+                "rows": [
+                    ["toggle"],
+                    ["progressive"],
+                    ["progressive_toggle"]
+                ]
+            }
+        ]
+    }
+}

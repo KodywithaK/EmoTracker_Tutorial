@@ -1,0 +1,57 @@
+{
+    "settings_popup": {
+        "type": "array",
+        "margin": "5",
+        "content": [
+            {
+                "type": "group",
+                "header": "Item Placement Mode",
+                "header_background": "#3e4b57",
+                "content":[
+                    {
+                        "type": "item",
+                        "margin": "-5,-1,-5,-5",
+                        "item": "item_placement_mode"
+                    }
+                ]
+            }            
+        ]
+    },    
+    "tracker_default": {
+        "type": "container",
+        "background": "#000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "left",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "background": "#333",
+                            "dock": "left",
+                            "max_width": "auto",
+                            "max_height": "auto",
+                            "header_content": {
+                                "type": "button_popup",
+                                "style": "settings",
+                                "layout": "settings_popup"
+                            },
+                            "content": {
+                                "type": "layout",
+                                "key": "shared_item_grid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "map"
+                }
+            ]
+        }
+    }
+}
