@@ -1,7 +1,7 @@
 {
-    "name": "Tutorial",
-    "game_name": "EmoTracker",
-    "platform": "snes",
+    "name": "EmoTracker Tutorial",
+    "game_name": "EmoTracker Tutorial",
+    "platform": "computer",
     "package_version": "1.0",
     "package_uid": "Tutorial_KodywithaK",
     "author": "KodywithaK"

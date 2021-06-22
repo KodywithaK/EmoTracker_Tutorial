@@ -1,0 +1,57 @@
+[{
+        "name": "consumable",
+        "type": "consumable",
+        "img": "images/consumable.png",
+        "min_quantity": 0,
+        "initial_quantity": 1,
+        "max_quantity": 2,
+        "display_as_fraction_of_max": true,
+        "increment": 1,
+        "codes": "consumable"
+    },
+    {
+        "name": "progressive",
+        "type": "progressive",
+        "allow_disabled": true,
+        "stages": [{
+                "img": "images/progressive1.png",
+                "codes": "progressive"
+            },
+            {
+                "img": "images/progressive2.png",
+                "codes": "progressive"
+            },
+            {
+                "img": "images/progressive3.png",
+                "codes": "progressive"
+            }
+        ]
+    },
+    {
+        "name": "progressive_toggle",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "stages": [{
+                "img": "images/progressive_toggle1.png",
+                "codes": "progressive_toggle"
+            },
+            {
+                "img": "images/progressive_toggle2.png",
+                "codes": "progressive_toggle"
+            }
+        ]
+    },
+    {
+        "name": "static",
+        "type": "static",
+        "img": "images/static.png",
+        "codes": "static"
+    },
+    {
+        "name": "toggle",
+        "type": "toggle",
+        "loop": false,
+        "img": "images/toggle.png",
+        "codes": "toggle"
+    }
+]
