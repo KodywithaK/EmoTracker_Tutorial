@@ -1,56 +1,96 @@
 {
-    "items": {
-        "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [{
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [{
-                "type": "itemgrid",
-                "item_margin": "5",
-                "h_alignment": "left",
-                "rows": [
-                    ["toggle", "consumable", "progressive"],
-                    ["progressive_toggle", "static"]
-                ]
-            }]
-        }]
-    },
-    "tracker_default": {
-        "type": "container",
-        "background": "#000000",
-        "content": {
+  "items": {
+    "type": "itemgrid",
+    "item_margin": "5",
+    "item_size": 32,
+    "rows": [
+      ["consumable", "toggle"],
+      ["progressive", "progressive_toggle"],
+      ["static", ""]
+    ]
+  },
+  "images": {
+    "type": "image",
+    "img": "images/consumable.png",
+    "background": "#30000ff0"
+  },
+
+  "tracker_default": {
+    "type": "container",
+    "background": "#600ff000",
+    "content": [
+      {
+        "type": "dock",
+        "dropshadow": true,
+        "content": [
+          {
             "type": "dock",
-            "dropshadow": true,
-            "content": [{
-                    "type": "dock",
-                    "dock": "left",
-                    "v_alignment": "stretch",
-                    "content": [{
-                        "type": "group",
-                        "header": "Items",
-                        "content": {
-                            "type": "layout",
-                            "key": "items"
-                        }
-                    }]
-                },
-                {
-                    "type": "tabbed",
-                    "tabs": [{
-                        "title": "Map",
-                        "icon": "",
-                        "content": {
-                            "type": "map",
-                            "maps": [
-                                "map"
-                            ]
-                        }
-                    }]
-                }
+            "dock": "left",
+            "background": "#6ff00000",
+            "content": [
+              {
+                "type": "group",
+                "dock": "top",
+                "header": "Items",
+                "content": [
+                  {
+                    "type": "layout",
+                    "key": "items"
+                  }
+                ]
+              },
+              {
+                "type": "group",
+                "header": "headerTitle",
+                "height": 100,
+                "width": 100,
+                "content": [
+                  {
+                    "type": "container",
+                    "background": "#ff0000",
+                    "height": 50,
+                    "width": 25,
+                    "h_alignment": "left"
+                  },
+                  {
+                    "type": "container",
+                    "background": "#00ff00",
+                    "height": 50,
+                    "width": 25,
+                    "h_alignment": "center"
+                  },
+                  {
+                    "type": "container",
+                    "background": "#0000ff",
+                    "height": 50,
+                    "width": 25,
+                    "h_alignment": "right"
+                  }
+                ]
+              }
             ]
-        }
-    }
+          },
+          {
+            "type": "layout",
+            "key": "images",
+            "dock": "bottom",
+            "header": "Image",
+            "height": 128
+          },
+          {
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Map",
+                "icon": "",
+                "content": {
+                  "type": "map"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
